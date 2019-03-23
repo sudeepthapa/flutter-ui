@@ -11,6 +11,10 @@ void main() {
       title: "Card Demo",
       home: HomePage(),
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        fontFamily: 'OpenSans',
+        primaryColor: Color(0xffb91d73)
+      ),
     )
   );
 }

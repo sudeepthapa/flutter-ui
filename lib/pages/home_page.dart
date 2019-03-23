@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile_card/pages/home_landing.dart';
 import 'package:profile_card/pages/profile_card.dart';
 
 class HomePage extends StatelessWidget {
@@ -28,7 +29,18 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (BuildContext context) => ProfileCard()));
-                })
+                }
+              ),
+            ListTile(
+              leading: Icon(Icons.arrow_right, color: Colors.deepOrangeAccent,),
+                title: Text("Home Landing", style: TextStyle(color:Colors.black87, fontSize: 18),),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => HomeLanding()));
+                }
+              )
           ],
         ),
       ),
