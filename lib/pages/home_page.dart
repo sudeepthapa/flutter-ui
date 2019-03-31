@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:profile_card/pages/cards/profile_card.dart';
 import 'package:profile_card/pages/landing/home_landing.dart';
 import 'package:profile_card/pages/login_pages/login_form.dart';
+import 'package:profile_card/pages/login_pages/login_page2.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -50,6 +51,16 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (BuildContext context) => LoginForm()));
+                }
+              ),
+            ListTile(
+              leading: Icon(Icons.arrow_right, color: Colors.deepOrangeAccent,),
+                title: Text("Login Page2", style: TextStyle(color:Colors.black87, fontSize: 18),),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => LoginPage2()));
                 }
               )
           ],
