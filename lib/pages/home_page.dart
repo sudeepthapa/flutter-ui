@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:profile_card/pages/home_landing.dart';
-import 'package:profile_card/pages/login_form.dart';
-import 'package:profile_card/pages/profile_card.dart';
+import 'package:profile_card/pages/cards/profile_card.dart';
+import 'package:profile_card/pages/landing/home_landing.dart';
+import 'package:profile_card/pages/login_pages/login_form.dart';
 
 class HomePage extends StatelessWidget {
   @override
