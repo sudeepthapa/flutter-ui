@@ -8,5 +8,6 @@
 ### First Screen
 <img src= "screenshots/home-page1.png" width="250px">
 
-#### Inspitations
+
+### Inspitations
 https://www.uplabs.com/posts/login-ui-d7273650-e473-476f-9a04-1ace8d9f1f4b
