@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:profile_card/pages/home_page.dart';
+import 'package:profile_card/widgets/sidebar.dart';
 
 void main() {
  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(

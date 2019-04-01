@@ -23,29 +23,13 @@ class HomePage extends StatelessWidget {
               title: Text('Flutter UI'),
               backgroundColor: Colors.deepOrange,
             ),
-            ListTile(
+            ExpansionTile(
+              leading: Icon(Icons.lock),
+              title: Text("Login UI", style: TextStyle(color: Colors.black, fontFamily: 'Roboto', fontSize: 18 ),),
+              children: <Widget>[
+                ListTile(
               leading: Icon(Icons.arrow_right, color: Colors.deepOrangeAccent,),
-                title: Text("Card Profile", style: TextStyle(color:Colors.black87, fontSize: 18),),
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (BuildContext context) => ProfileCard()));
-                }
-              ),
-            ListTile(
-              leading: Icon(Icons.arrow_right, color: Colors.deepOrangeAccent,),
-                title: Text("Home Landing", style: TextStyle(color:Colors.black87, fontSize: 18),),
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (BuildContext context) => HomeLanding()));
-                }
-              ),
-            ListTile(
-              leading: Icon(Icons.arrow_right, color: Colors.deepOrangeAccent,),
-                title: Text("Login Form", style: TextStyle(color:Colors.black87, fontSize: 18),),
+                title: Text("Login Form", style: TextStyle(color:Colors.black87, fontSize: 14),),
                 onTap: () {
                   Navigator.push(
                       context,
@@ -55,7 +39,7 @@ class HomePage extends StatelessWidget {
               ),
             ListTile(
               leading: Icon(Icons.arrow_right, color: Colors.deepOrangeAccent,),
-                title: Text("Login Page2", style: TextStyle(color:Colors.black87, fontSize: 18),),
+                title: Text("Login Page2", style: TextStyle(color:Colors.black87, fontSize: 14),),
                 onTap: () {
                   Navigator.push(
                       context,
@@ -63,6 +47,43 @@ class HomePage extends StatelessWidget {
                           builder: (BuildContext context) => LoginPage2()));
                 }
               )
+              ],
+            ),
+            ExpansionTile(
+              title: Text("Profile UI", style: TextStyle(color: Colors.black, fontFamily: 'Roboto', fontSize: 18 ),),
+              leading: Icon(Icons.person),
+              children: <Widget>[
+                ListTile(
+              leading: Icon(Icons.arrow_right, color: Colors.deepOrangeAccent,),
+                title: Text("Card Profile 1", style: TextStyle(color:Colors.black87, fontSize: 14),),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => ProfileCard()));
+                }
+              ),
+              ],
+            ),
+            ExpansionTile(
+              title: Text("Misallenaous", style: TextStyle(color: Colors.black, fontFamily: 'Roboto', fontSize: 18 ),),
+              leading: Icon(Icons.loupe),
+              children: <Widget>[
+                ListTile(
+              leading: Icon(Icons.arrow_right, color: Colors.deepOrangeAccent,),
+                title: Text("Home Landing", style: TextStyle(color:Colors.black87, fontSize: 14),),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => HomeLanding()));
+                }
+              ),
+              ],
+            ),
+            
+            
+            
           ],
         ),
       ),
