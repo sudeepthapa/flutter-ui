@@ -9,7 +9,7 @@
 ### Profile UI
 <img src= "screenshots/card-profile.png" width="250px">
 
-### Miscellanenous
+### Miscellanenousre
 <img src= "screenshots/home-page1.png" width="250px"> 
 
 
