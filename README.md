@@ -1,12 +1,16 @@
 # Flutter UIs
-### All
-<img src= "screenshots/home-page1.png" width="250px"> <img src= "screenshots/card-profile.png" width="250px"> <img src= "screenshots/login-form1.png" width="250px"> <img src= "screenshots/login2.png" width="250px">
 
-### Forms
+### Login UI
 <img src= "screenshots/login-form1.png" width="250px"> <img src= "screenshots/login2.png" width="250px">
 
-### First Screen
-<img src= "screenshots/home-page1.png" width="250px">
+### List UI
+<img src= "screenshots/place list.png" width="250px">
+
+### Profile UI
+<img src= "screenshots/card-profile.png" width="250px">
+
+### Miscellanenous
+<img src= "screenshots/home-page1.png" width="250px"> 
 
 
 ### Inspitations
