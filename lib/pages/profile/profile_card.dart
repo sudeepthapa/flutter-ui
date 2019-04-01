@@ -12,108 +12,114 @@ class ProfileCard extends StatelessWidget {
         ),
         backgroundColor: Color.fromRGBO(255, 255, 255, .9),
         body: SafeArea(
-          child: Stack(
+          child: ListView(
             children: <Widget>[
-              Container(
-                width: double.infinity,
-                height: 330,
-                color: Colors.orange,
-              ),
-              Positioned(
-                top: 10,
-                right: 30,
-                child: Icon(
-                  Icons.settings,
-                  color: Colors.white,
-                ),
-              ),
-              ListView(
+              Stack(
                 children: <Widget>[
                   Container(
-                    height: 90,
-                    margin: EdgeInsets.only(top: 60),
-                    child: CircleAvatar(
-                      backgroundColor: Colors.white,
+                    width: double.infinity,
+                    height: 330,
+                    color: Colors.orange,
+                  ),
+                  Positioned(
+                    top: 10,
+                    right: 30,
+                    child: Icon(
+                      Icons.settings,
+                      color: Colors.white,
                     ),
                   ),
-                  Padding(
-                    padding: EdgeInsets.all(4),
-                  ),
-                  Text(
-                    "Sudip Thapa",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500,
-                        fontSize: 20),
-                    textAlign: TextAlign.center,
-                  ),
-                  Padding(
-                    padding: EdgeInsets.all(4),
-                  ),
-                  Text(
-                    "Kathmandu",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w400,
-                        fontSize: 16),
-                    textAlign: TextAlign.center,
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(top: 77),
-                    padding: EdgeInsets.all(10),
-                    child: Card(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: <Widget>[
-                          Column(
-                            children: <Widget>[
-                              Container(
-                                  padding: EdgeInsets.only(top: 15, bottom: 5),
-                                  child: Text("Photos",
-                                      style: TextStyle(color: Colors.black54))),
-                              Container(
-                                  padding: EdgeInsets.only(bottom: 15),
-                                  child: Text("5,000",
-                                      style: TextStyle(
-                                          color: Colors.black87,
-                                          fontSize: 16))),
-                            ],
-                          ),
-                          Column(
-                            children: <Widget>[
-                              Container(
-                                  padding: EdgeInsets.only(top: 15, bottom: 5),
-                                  child: Text("Followers",
-                                      style: TextStyle(color: Colors.black54))),
-                              Container(
-                                  padding: EdgeInsets.only(bottom: 15),
-                                  child: Text("5,000",
-                                      style: TextStyle(
-                                          color: Colors.black87,
-                                          fontSize: 16))),
-                            ],
-                          ),
-                          Column(
-                            children: <Widget>[
-                              Container(
-                                  padding: EdgeInsets.only(top: 10, bottom: 5),
-                                  child: Text("Followings",
-                                      style: TextStyle(color: Colors.black54))),
-                              Container(
-                                  padding: EdgeInsets.only(bottom: 10),
-                                  child: Text("5,000",
-                                      style: TextStyle(
-                                          color: Colors.black87,
-                                          fontSize: 16))),
-                            ],
-                          ),
-                        ],
+                  Column(
+                    children: <Widget>[
+                      Container(
+                        height: 90,
+                        margin: EdgeInsets.only(top: 60),
+                        child: CircleAvatar(
+                          radius: 50,
+                          backgroundColor: Colors.white,
+                          child: Icon(Icons.person, size: 70,),
+                        ),
                       ),
-                    ),
-                  ),
-                  UserInfo()
+                      Padding(
+                        padding: EdgeInsets.all(4),
+                      ),
+                      Text(
+                        "Sudip Thapa",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                        textAlign: TextAlign.center,
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(4),
+                      ),
+                      Text(
+                        "Kathmandu",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w400,
+                            fontSize: 16),
+                        textAlign: TextAlign.center,
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(top: 77),
+                        padding: EdgeInsets.all(10),
+                        child: Card(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: <Widget>[
+                              Column(
+                                children: <Widget>[
+                                  Container(
+                                      padding: EdgeInsets.only(top: 15, bottom: 5),
+                                      child: Text("Photos",
+                                          style: TextStyle(color: Colors.black54))),
+                                  Container(
+                                      padding: EdgeInsets.only(bottom: 15),
+                                      child: Text("5,000",
+                                          style: TextStyle(
+                                              color: Colors.black87,
+                                              fontSize: 16))),
+                                ],
+                              ),
+                              Column(
+                                children: <Widget>[
+                                  Container(
+                                      padding: EdgeInsets.only(top: 15, bottom: 5),
+                                      child: Text("Followers",
+                                          style: TextStyle(color: Colors.black54))),
+                                  Container(
+                                      padding: EdgeInsets.only(bottom: 15),
+                                      child: Text("5,000",
+                                          style: TextStyle(
+                                              color: Colors.black87,
+                                              fontSize: 16))),
+                                ],
+                              ),
+                              Column(
+                                children: <Widget>[
+                                  Container(
+                                      padding: EdgeInsets.only(top: 10, bottom: 5),
+                                      child: Text("Followings",
+                                          style: TextStyle(color: Colors.black54))),
+                                  Container(
+                                      padding: EdgeInsets.only(bottom: 10),
+                                      child: Text("5,000",
+                                          style: TextStyle(
+                                              color: Colors.black87,
+                                              fontSize: 16))),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      UserInfo()
+                    ],
+                  )
                 ],
-              )
+              ),
             ],
           ),
         ));

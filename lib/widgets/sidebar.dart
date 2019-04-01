@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
                       color: Colors.deepOrangeAccent,
                     ),
                     title: Text(
-                      "Login Form",
+                      "Login Form 1",
                       style: TextStyle(color: Colors.black87, fontSize: 14),
                     ),
                     onTap: () {
@@ -53,7 +53,7 @@ class HomePage extends StatelessWidget {
                       color: Colors.deepOrangeAccent,
                     ),
                     title: Text(
-                      "Login Page2",
+                      "Login Form 2",
                       style: TextStyle(color: Colors.black87, fontSize: 14),
                     ),
                     onTap: () {
