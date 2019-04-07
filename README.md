@@ -9,6 +9,9 @@
 ### Profile UI
 <img src= "screenshots/card-profile.png" width="250px">
 
+### Article UI
+<img src= "screenshots/newsarticle1.png" width="250px">
+
 ### Miscellanenousre
 <img src= "screenshots/home-page1.png" width="250px"> 
 
