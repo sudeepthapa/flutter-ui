@@ -18,6 +18,7 @@ class MewsArticle1 extends StatelessWidget {
             children: <Widget>[
               Container(
                 height: 280,
+                width: double.infinity,
                 child: Image.asset(
                   "images/student.jpg",
                   fit: BoxFit.cover,
