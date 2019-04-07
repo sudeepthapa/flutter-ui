@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutube/flutube.dart';
 
 class MewsArticle1 extends StatelessWidget {
   @override
+  Widget flutubePlayer = FluTube("https://www.youtube.com/watch?v=1I-3vJSC-Vo",
+      aspectRatio: 25 / 15, autoPlay: true, looping: true);
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
@@ -16,7 +19,7 @@ class MewsArticle1 extends StatelessWidget {
               Container(
                 height: 280,
                 child: Image.asset(
-                  "images/hotel.jpg",
+                  "images/student.jpg",
                   fit: BoxFit.cover,
                 ),
               ),
@@ -133,6 +136,23 @@ class MewsArticle1 extends StatelessWidget {
               textAlign: TextAlign.justify,
             ),
           ),
+            Container(
+              margin: EdgeInsets.only(top: 20),
+            padding: EdgeInsets.symmetric(vertical: 10, horizontal: 8),
+            child: Text(
+              "Post Video",
+              style: TextStyle(
+                  color: Colors.black87,
+                  fontSize: 19,
+                  fontWeight: FontWeight.w700),
+              textAlign: TextAlign.left,
+            ),
+          ),
+          Container(
+            padding:EdgeInsets.symmetric(horizontal: 10),
+            margin: EdgeInsets.symmetric(vertical: 20),
+            child: flutubePlayer,
+          )
         ],
       ),
     );
