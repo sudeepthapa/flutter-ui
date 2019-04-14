@@ -4,6 +4,7 @@ import 'package:profile_card/pages/login_pages/login_form.dart';
 import 'package:profile_card/pages/login_pages/login_page2.dart';
 import 'package:profile_card/pages/missaleneous/home_landing.dart';
 import 'package:profile_card/pages/news_article/news_article.dart';
+import 'package:profile_card/pages/profile/profile2.dart';
 import 'package:profile_card/pages/profile/profile_card.dart';
 
 class HomePage extends StatelessWidget {
@@ -74,21 +75,37 @@ class HomePage extends StatelessWidget {
               leading: Icon(Icons.person),
               children: <Widget>[
                 ListTile(
-                    leading: Icon(
-                      Icons.arrow_right,
-                      color: Colors.deepOrangeAccent,
-                    ),
-                    title: Text(
-                      "Card Profile 1",
-                      style: TextStyle(color: Colors.black87, fontSize: 14),
-                    ),
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (BuildContext context) =>
-                                  ProfileCard()));
-                    }),
+                  leading: Icon(
+                    Icons.arrow_right,
+                    color: Colors.deepOrangeAccent,
+                  ),
+                  title: Text(
+                    "Card Profile 1",
+                    style: TextStyle(color: Colors.black87, fontSize: 14),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (BuildContext context) => ProfileCard()));
+                  },
+                ),
+                ListTile(
+                  leading: Icon(
+                    Icons.arrow_right,
+                    color: Colors.deepOrangeAccent,
+                  ),
+                  title: Text(
+                    "Profile 2",
+                    style: TextStyle(color: Colors.black87, fontSize: 14),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (BuildContext context) => Profile2()));
+                  },
+                ),
               ],
             ),
             ExpansionTile(
@@ -151,29 +168,29 @@ class HomePage extends StatelessWidget {
               ),
               leading: Icon(Icons.list),
               children: <Widget>[
-                 ExpansionTile(
-                   backgroundColor: Colors.black12,
-                   title: Text('Directory Concept'),
-                   leading: Icon(Icons.looks),
-                   children: <Widget>[
-                     ListTile(
-                    leading: Icon(
-                      Icons.arrow_right,
-                      color: Colors.deepOrangeAccent,
-                    ),
-                    title: Text(
-                      "Place List 1",
-                      style: TextStyle(color: Colors.black87, fontSize: 14),
-                    ),
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (BuildContext context) =>
-                                  PlaceList1()));
-                    })
-                   ],
-                 )
+                ExpansionTile(
+                  backgroundColor: Colors.black12,
+                  title: Text('Directory Concept'),
+                  leading: Icon(Icons.looks),
+                  children: <Widget>[
+                    ListTile(
+                        leading: Icon(
+                          Icons.arrow_right,
+                          color: Colors.deepOrangeAccent,
+                        ),
+                        title: Text(
+                          "Place List 1",
+                          style: TextStyle(color: Colors.black87, fontSize: 14),
+                        ),
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      PlaceList1()));
+                        })
+                  ],
+                )
               ],
             )
           ],
