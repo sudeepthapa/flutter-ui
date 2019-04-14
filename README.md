@@ -3,11 +3,11 @@
 ### Login UI
 <img src= "screenshots/login-form1.png" width="250px"> <img src= "screenshots/login2.png" width="250px">
 
+### Profile UI
+<img src= "screenshots/card-profile.png" width="250px"> <img src= "screenshots/profile_card2.png" width="250px">
+
 ### List UI
 <img src= "screenshots/place list.png" width="250px">
-
-### Profile UI
-<img src= "screenshots/card-profile.png" width="250px">
 
 ### Article UI
 <img src= "screenshots/newsarticle1.png" width="250px">
