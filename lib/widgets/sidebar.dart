@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:profile_card/pages/about_us/about_us.dart';
 import 'package:profile_card/pages/lists/directory_concept/placelist1.dart';
 import 'package:profile_card/pages/login_pages/login_form.dart';
 import 'package:profile_card/pages/login_pages/login_page2.dart';
 import 'package:profile_card/pages/missaleneous/home_landing.dart';
 import 'package:profile_card/pages/news_article/news_article.dart';
+import 'package:profile_card/pages/parent.dart';
 import 'package:profile_card/pages/profile/profile2.dart';
 import 'package:profile_card/pages/profile/profile_card.dart';
 
@@ -136,6 +138,32 @@ class HomePage extends StatelessWidget {
             ),
             ExpansionTile(
               title: Text(
+                "About Us",
+                style: TextStyle(
+                    color: Colors.black, fontFamily: 'Roboto', fontSize: 18),
+              ),
+              leading: Icon(Icons.person),
+              children: <Widget>[
+                ListTile(
+                    leading: Icon(
+                      Icons.arrow_right,
+                      color: Colors.deepOrangeAccent,
+                    ),
+                    title: Text(
+                      "About Us 1",
+                      style: TextStyle(color: Colors.black87, fontSize: 14),
+                    ),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  AboutUs()));
+                    }),
+              ],
+            ),
+            ExpansionTile(
+              title: Text(
                 "Misallenaous",
                 style: TextStyle(
                     color: Colors.black, fontFamily: 'Roboto', fontSize: 18),
@@ -192,7 +220,22 @@ class HomePage extends StatelessWidget {
                   ],
                 )
               ],
-            )
+            ),
+            ListTile(
+                leading: Icon(
+                  Icons.arrow_right,
+                  color: Colors.deepOrangeAccent,
+                ),
+                title: Text(
+                  "Parent",
+                  style: TextStyle(color: Colors.black87, fontSize: 14),
+                ),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => Parent()));
+                })
           ],
         ),
       ),
