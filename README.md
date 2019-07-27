@@ -12,8 +12,11 @@
 ### Article UI
 <img src= "screenshots/newsarticle1.png" width="250px">
 
+### AboutUs UI
+<img src= "screenshots/about1.png" width="250px">
+
 ### Miscellanenousre
-<img src= "screenshots/home-page1.png" width="250px"> 
+<img src= "screenshots/home_screen1.png" width="250px"> <img src= "screenshots/carpage1.png" width="250px"> <img src= "screenshots/carspec.png" width="250px"> <img src= "screenshots/home-page1.png" width="250px"> 
 
 
 ### Inspirations

@@ -3,9 +3,10 @@ import 'package:profile_card/pages/about_us/about_us.dart';
 import 'package:profile_card/pages/lists/directory_concept/placelist1.dart';
 import 'package:profile_card/pages/login_pages/login_form.dart';
 import 'package:profile_card/pages/login_pages/login_page2.dart';
+import 'package:profile_card/pages/missaleneous/car_app.dart';
 import 'package:profile_card/pages/missaleneous/home_landing.dart';
+import 'package:profile_card/pages/missaleneous/home_page1.dart';
 import 'package:profile_card/pages/news_article/news_article.dart';
-import 'package:profile_card/pages/parent.dart';
 import 'package:profile_card/pages/profile/profile2.dart';
 import 'package:profile_card/pages/profile/profile_card.dart';
 
@@ -157,8 +158,7 @@ class HomePage extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (BuildContext context) =>
-                                  AboutUs()));
+                              builder: (BuildContext context) => AboutUs()));
                     }),
               ],
             ),
@@ -176,6 +176,21 @@ class HomePage extends StatelessWidget {
                       color: Colors.deepOrangeAccent,
                     ),
                     title: Text(
+                      "Home Page1",
+                      style: TextStyle(color: Colors.black87, fontSize: 14),
+                    ),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) => HomePage1()));
+                    }),
+                ListTile(
+                    leading: Icon(
+                      Icons.arrow_right,
+                      color: Colors.deepOrangeAccent,
+                    ),
+                    title: Text(
                       "Home Landing",
                       style: TextStyle(color: Colors.black87, fontSize: 14),
                     ),
@@ -185,6 +200,21 @@ class HomePage extends StatelessWidget {
                           MaterialPageRoute(
                               builder: (BuildContext context) =>
                                   HomeLanding()));
+                    }),
+                ListTile(
+                    leading: Icon(
+                      Icons.arrow_right,
+                      color: Colors.deepOrangeAccent,
+                    ),
+                    title: Text(
+                      "Car App",
+                      style: TextStyle(color: Colors.black87, fontSize: 14),
+                    ),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) => CarApp()));
                     }),
               ],
             ),
@@ -221,48 +251,41 @@ class HomePage extends StatelessWidget {
                 )
               ],
             ),
-            ListTile(
-                leading: Icon(
-                  Icons.arrow_right,
-                  color: Colors.deepOrangeAccent,
-                ),
-                title: Text(
-                  "Parent",
-                  style: TextStyle(color: Colors.black87, fontSize: 14),
-                ),
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (BuildContext context) => Parent()));
-                })
           ],
         ),
       ),
-      body: Center(
-        child: Container(
-            child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              "Navigate to View All UIs.",
-              style: TextStyle(fontSize: 20, color: Colors.deepPurple),
-            ),
-            Builder(
-              builder: (BuildContext context) => RaisedButton(
-                    child: Icon(
-                      Icons.menu,
-                      color: Colors.white,
-                    ),
-                    color: Colors.deepOrange,
-                    onPressed: () {
-                      Scaffold.of(context).openDrawer();
-                    },
+      body: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage('images/butterfly.jpg'), fit: BoxFit.cover,colorFilter: ColorFilter.mode(
+                  Colors.black.withOpacity(.5), BlendMode.hardLight)),
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Text("' Colaboration in the means to faster success '",textAlign: TextAlign.center,style: TextStyle(fontSize: 20, color: Colors.white),),
+              ),
+              Text(
+                "Navigate to View All UIs.",
+                style: TextStyle(fontSize: 20, color: Colors.white),
+              ),
+              Builder(
+                builder: (BuildContext context) => RaisedButton(
+                  child: Icon(
+                    Icons.menu,
+                    color: Colors.white,
                   ),
-            )
-          ],
-        )),
-      ),
+                  color: Colors.deepOrange,
+                  onPressed: () {
+                    Scaffold.of(context).openDrawer();
+                  },
+                ),
+              )
+            ],
+          )),
     );
   }
 }
