@@ -4,6 +4,7 @@ import 'package:profile_card/pages/lists/directory_concept/placelist1.dart';
 import 'package:profile_card/pages/login_pages/login_form.dart';
 import 'package:profile_card/pages/login_pages/login_page2.dart';
 import 'package:profile_card/pages/missaleneous/car_app.dart';
+import 'package:profile_card/pages/missaleneous/clock.dart';
 import 'package:profile_card/pages/missaleneous/home_landing.dart';
 import 'package:profile_card/pages/missaleneous/home_page1.dart';
 import 'package:profile_card/pages/news_article/news_article.dart';
@@ -184,6 +185,21 @@ class HomePage extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (BuildContext context) => HomePage1()));
+                    }),
+                ListTile(
+                    leading: Icon(
+                      Icons.arrow_right,
+                      color: Colors.deepOrangeAccent,
+                    ),
+                    title: Text(
+                      "Clock",
+                      style: TextStyle(color: Colors.black87, fontSize: 14),
+                    ),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) => Clock()));
                     }),
                 ListTile(
                     leading: Icon(
