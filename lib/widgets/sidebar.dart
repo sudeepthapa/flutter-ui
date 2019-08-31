@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:profile_card/pages/about_us/about_us.dart';
 import 'package:profile_card/pages/lists/directory_concept/placelist1.dart';
+import 'package:profile_card/pages/lists/directory_concept/schoolList.dart';
 import 'package:profile_card/pages/login_pages/login_form.dart';
 import 'package:profile_card/pages/login_pages/login_page2.dart';
 import 'package:profile_card/pages/missaleneous/car_app.dart';
@@ -262,7 +263,23 @@ class HomePage extends StatelessWidget {
                               MaterialPageRoute(
                                   builder: (BuildContext context) =>
                                       PlaceList1()));
-                        })
+                        }),
+                    ListTile(
+                        leading: Icon(
+                          Icons.arrow_right,
+                          color: Colors.deepOrangeAccent,
+                        ),
+                        title: Text(
+                          "School List",
+                          style: TextStyle(color: Colors.black87, fontSize: 14),
+                        ),
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      SchoolList()));
+                        }),
                   ],
                 )
               ],
@@ -274,15 +291,21 @@ class HomePage extends StatelessWidget {
           width: double.infinity,
           decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('images/butterfly.jpg'), fit: BoxFit.cover,colorFilter: ColorFilter.mode(
-                  Colors.black.withOpacity(.5), BlendMode.hardLight)),
+                image: AssetImage('images/butterfly.jpg'),
+                fit: BoxFit.cover,
+                colorFilter: ColorFilter.mode(
+                    Colors.black.withOpacity(.5), BlendMode.hardLight)),
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.all(20.0),
-                child: Text("' Colaboration in the means to faster success '",textAlign: TextAlign.center,style: TextStyle(fontSize: 20, color: Colors.white),),
+                child: Text(
+                  "' Colaboration in the means to faster success '",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 20, color: Colors.white),
+                ),
               ),
               Text(
                 "Navigate to View All UIs.",
