@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:profile_card/pages/about_us/about_us.dart';
 import 'package:profile_card/pages/ecommerce/cart1.dart';
+import 'package:profile_card/pages/ecommerce/product_detail.dart';
 import 'package:profile_card/pages/lists/directory_concept/placelist1.dart';
 import 'package:profile_card/pages/lists/directory_concept/schoolList.dart';
 import 'package:profile_card/pages/login_pages/login_form.dart';
@@ -11,6 +12,7 @@ import 'package:profile_card/pages/missaleneous/home_landing.dart';
 import 'package:profile_card/pages/missaleneous/home_page1.dart';
 import 'package:profile_card/pages/news_article/news_article.dart';
 import 'package:profile_card/pages/profile/profile2.dart';
+import 'package:profile_card/pages/profile/profile3.dart';
 import 'package:profile_card/pages/profile/profile_card.dart';
 
 class HomePage extends StatelessWidget {
@@ -112,6 +114,22 @@ class HomePage extends StatelessWidget {
                             builder: (BuildContext context) => Profile2()));
                   },
                 ),
+                ListTile(
+                  leading: Icon(
+                    Icons.arrow_right,
+                    color: Colors.deepOrangeAccent,
+                  ),
+                  title: Text(
+                    "Profile 3",
+                    style: TextStyle(color: Colors.black87, fontSize: 14),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (BuildContext context) => Profile3()));
+                  },
+                ),
               ],
             ),
             ExpansionTile(
@@ -187,6 +205,22 @@ class HomePage extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (BuildContext context) => Cart()));
+                    }),
+                ListTile(
+                    leading: Icon(
+                      Icons.arrow_right,
+                      color: Colors.deepOrangeAccent,
+                    ),
+                    title: Text(
+                      "Product Detail 1",
+                      style: TextStyle(color: Colors.black87, fontSize: 14),
+                    ),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  ProductDetailsPage()));
                     }),
               ],
             ),
