@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:profile_card/pages/about_us/about_us.dart';
+import 'package:profile_card/pages/ecommerce/cart1.dart';
 import 'package:profile_card/pages/lists/directory_concept/placelist1.dart';
 import 'package:profile_card/pages/lists/directory_concept/schoolList.dart';
 import 'package:profile_card/pages/login_pages/login_form.dart';
@@ -161,6 +162,31 @@ class HomePage extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (BuildContext context) => AboutUs()));
+                    }),
+              ],
+            ),
+            ExpansionTile(
+              title: Text(
+                "Ecommerce",
+                style: TextStyle(
+                    color: Colors.black, fontFamily: 'Roboto', fontSize: 18),
+              ),
+              leading: Icon(Icons.shopping_cart),
+              children: <Widget>[
+                ListTile(
+                    leading: Icon(
+                      Icons.arrow_right,
+                      color: Colors.deepOrangeAccent,
+                    ),
+                    title: Text(
+                      "Cart Page 1",
+                      style: TextStyle(color: Colors.black87, fontSize: 14),
+                    ),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) => Cart()));
                     }),
               ],
             ),
